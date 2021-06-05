@@ -1,0 +1,743 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jun  5 16:54:37 2021
+# Process ID: 1916
+# Current directory: F:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.runs/huffman_coder_acc_huff_coder4_0_0_synth_1
+# Command line: vivado.exe -log huffman_coder_acc_huff_coder4_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source huffman_coder_acc_huff_coder4_0_0.tcl
+# Log file: F:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.runs/huffman_coder_acc_huff_coder4_0_0_synth_1/huffman_coder_acc_huff_coder4_0_0.vds
+# Journal file: F:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.runs/huffman_coder_acc_huff_coder4_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source huffman_coder_acc_huff_coder4_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/ip_repo/huff_coder4_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/ip_repo/huff_coder3_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/ip_repo/huff_coder2_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top huffman_coder_acc_huff_coder4_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12264 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 393.539 ; gain = 98.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'huffman_coder_acc_huff_coder4_0_0' [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ip/huffman_coder_acc_huff_coder4_0_0/synth/huffman_coder_acc_huff_coder4_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'huff_coder4_v1_0' [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder4_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'huff_coder4_v1_0_S00_AXI' [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder4_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder4_v1_0_S00_AXI.v:231]
+INFO: [Synth 8-226] default block is never used [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder4_v1_0_S00_AXI.v:372]
+INFO: [Synth 8-6157] synthesizing module 'huff_coder' [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:24]
+	Parameter M_RESET bound to: 4'b0001 
+	Parameter M_LOAD_DATA bound to: 4'b0010 
+	Parameter M_PARSE_DATA bound to: 4'b0011 
+	Parameter M_ADD_BITS_COUNT bound to: 4'b0100 
+	Parameter M_DATA_PUSH bound to: 4'b0101 
+	Parameter M_DATA_CLEAR bound to: 4'b0110 
+	Parameter DETECT_EDGE bound to: 4'b0001 
+	Parameter EDGE_DETECTED bound to: 4'b0010 
+	Parameter HIGH_EDGE bound to: 4'b0011 
+	Parameter INCREMENT_K bound to: 4'b0100 
+	Parameter INCREMENT_J bound to: 5'b00001 
+	Parameter GET_ACTUAL_CHARACTER bound to: 5'b00010 
+	Parameter GET_CHARACTER_INDEX bound to: 5'b00011 
+	Parameter GET_SYMBOL_LENGTH bound to: 5'b00100 
+	Parameter CALCULATE_BIT_SHIFT bound to: 5'b00101 
+	Parameter CHECK_BIT_SHIFT bound to: 5'b00110 
+	Parameter RECALCULATE_BIT_SHIFT bound to: 5'b00111 
+	Parameter APPLY_NEW_BIT_SHIFT bound to: 5'b01000 
+	Parameter CHECK_J bound to: 5'b01001 
+	Parameter INCREMENT_BYTES_INDEX bound to: 5'b01010 
+	Parameter CLEAR_BYTE bound to: 4'b0001 
+	Parameter INCREMENT_I bound to: 4'b0010 
+	Parameter BUFFER_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:120]
+INFO: [Synth 8-155] case statement is not full and has no default [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:167]
+INFO: [Synth 8-155] case statement is not full and has no default [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:245]
+INFO: [Synth 8-155] case statement is not full and has no default [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:284]
+INFO: [Synth 8-155] case statement is not full and has no default [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:118]
+WARNING: [Synth 8-6014] Unused sequential element actualCharacterSymbol_reg was removed.  [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:114]
+WARNING: [Synth 8-6014] Unused sequential element characters_reg was removed. 
+INFO: [Synth 8-6155] done synthesizing module 'huff_coder' (1#1) [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'huff_coder4_v1_0_S00_AXI' (2#1) [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder4_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'huff_coder4_v1_0' (3#1) [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder4_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'huffman_coder_acc_huff_coder4_0_0' (4#1) [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ip/huffman_coder_acc_huff_coder4_0_0/synth/huffman_coder_acc_huff_coder4_0_0.v:57]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[7]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[6]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[5]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[4]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[3]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[2]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[1]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[0]
+WARNING: [Synth 8-3331] design huff_coder4_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design huff_coder4_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design huff_coder4_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design huff_coder4_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design huff_coder4_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design huff_coder4_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 513.027 ; gain = 217.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 513.027 ; gain = 217.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 513.027 ; gain = 217.848
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 863.598 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 863.598 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.263 . Memory (MB): peak = 868.910 ; gain = 5.312
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 868.910 ; gain = 573.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 868.910 ; gain = 573.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 868.910 ; gain = 573.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:167]
+INFO: [Synth 8-5545] ROM "outputBits_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputBits_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "outputBits_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outputBits_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "outputBits_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[64]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[65]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[66]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[67]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[68]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[69]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[70]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[71]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[72]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[73]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[74]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[75]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[76]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[77]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[78]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[79]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[80]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[81]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[82]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[83]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[84]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[85]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[86]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[87]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[88]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[89]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[90]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[91]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[92]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[93]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[94]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[95]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[96]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[97]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[98]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outputBits_reg[99]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "symbolsLength" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "symbolsLength" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dataOut" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "loadDataMachine" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pushDataMachine" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clearDataMachine" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clearDataMachine" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element i_reg_rep was removed.  [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:98]
+WARNING: [Synth 8-6014] Unused sequential element k_reg_rep was removed.  [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:100]
+WARNING: [Synth 8-6014] Unused sequential element characterIndex_reg_rep was removed.  [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:112]
+WARNING: [Synth 8-6014] Unused sequential element i_reg_rep was removed.  [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:98]
+WARNING: [Synth 8-6014] Unused sequential element k_reg_rep was removed.  [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:100]
+WARNING: [Synth 8-6014] Unused sequential element i_reg_rep was removed.  [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:98]
+WARNING: [Synth 8-6014] Unused sequential element k_reg_rep was removed.  [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:100]
+WARNING: [Synth 8-6014] Unused sequential element characterIndex_reg_rep was removed.  [f:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.srcs/sources_1/bd/huffman_coder_acc/ipshared/8eb2/hdl/huff_coder.v:112]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 868.910 ; gain = 573.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 108   
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 104   
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	               3K Bit         RAMs := 1     
+	              800 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 19    
+	   6 Input     32 Bit        Muxes := 4     
+	  11 Input     32 Bit        Muxes := 5     
+	   5 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   6 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 2     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   5 Input      2 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 831   
+	   6 Input      1 Bit        Muxes := 207   
+	   5 Input      1 Bit        Muxes := 108   
+	   3 Input      1 Bit        Muxes := 202   
+	  11 Input      1 Bit        Muxes := 103   
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module huff_coder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 103   
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 104   
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               3K Bit         RAMs := 1     
+	              800 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 17    
+	   6 Input     32 Bit        Muxes := 4     
+	  11 Input     32 Bit        Muxes := 5     
+	   5 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   6 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 2     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   5 Input      2 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 826   
+	   6 Input      1 Bit        Muxes := 207   
+	   5 Input      1 Bit        Muxes := 108   
+	   3 Input      1 Bit        Muxes := 202   
+	  11 Input      1 Bit        Muxes := 103   
+	   8 Input      1 Bit        Muxes := 1     
+Module huff_coder4_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[7]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[6]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[5]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[4]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[3]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[2]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[1]
+WARNING: [Synth 8-3331] design huff_coder has unconnected port character[0]
+WARNING: [Synth 8-3331] design huffman_coder_acc_huff_coder4_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design huffman_coder_acc_huff_coder4_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design huffman_coder_acc_huff_coder4_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design huffman_coder_acc_huff_coder4_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design huffman_coder_acc_huff_coder4_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design huffman_coder_acc_huff_coder4_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg_rep[5]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg_rep[4]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg_rep[3]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg_rep[2]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg_rep[1]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg_rep[0]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg_rep[5]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg_rep[4]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg_rep[3]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg_rep[2]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg_rep[1]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg_rep[0]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg_rep[6]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/i_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg_rep[6]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/k_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/clearDataMachine_reg[3]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst/clearDataMachine_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst /\clearDataMachine_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst /\parseDataMachine_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst /\loadDataMachine_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst /\pushDataMachine_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst /\stateMachine_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[20]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[21]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[22]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[23]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[24]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[25]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[26]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[27]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[28]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[29]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[30]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/huff_coder4_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/huff_coder4_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/huff_coder4_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst /\log_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[31]' (FD) to 'inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/huff_coder4_v1_0_S00_AXI_inst/slv_reg2_reg[19] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 868.910 ; gain = 573.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------------------------------------+-------------------+-----------+----------------------+------------------------------+
+|Module Name                                     | RTL Object        | Inference | Size (Depth x Width) | Primitives                   | 
++------------------------------------------------+-------------------+-----------+----------------------+------------------------------+
+|\inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst  | symbolsLength_reg | Implied   | 128 x 32             | RAM64X1D x 12  RAM64M x 60   | 
+|\inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst  | symbols_reg       | Implied   | 128 x 8              | RAM64X1D x 12  RAM64M x 12   | 
++------------------------------------------------+-------------------+-----------+----------------------+------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:22 . Memory (MB): peak = 868.910 ; gain = 573.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:25 . Memory (MB): peak = 868.910 ; gain = 573.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------------------------------------------+-------------------+-----------+----------------------+------------------------------+
+|Module Name                                     | RTL Object        | Inference | Size (Depth x Width) | Primitives                   | 
++------------------------------------------------+-------------------+-----------+----------------------+------------------------------+
+|\inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst  | symbolsLength_reg | Implied   | 128 x 32             | RAM64X1D x 12  RAM64M x 60   | 
+|\inst/huff_coder4_v1_0_S00_AXI_inst/coder_inst  | symbols_reg       | Implied   | 128 x 8              | RAM64X1D x 12  RAM64M x 12   | 
++------------------------------------------------+-------------------+-----------+----------------------+------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:01:33 . Memory (MB): peak = 933.121 ; gain = 637.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 933.121 ; gain = 637.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 933.121 ; gain = 637.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 933.121 ; gain = 637.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 933.121 ; gain = 637.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:29 ; elapsed = 00:01:37 . Memory (MB): peak = 933.121 ; gain = 637.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:29 ; elapsed = 00:01:37 . Memory (MB): peak = 933.121 ; gain = 637.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    44|
+|2     |LUT1     |    11|
+|3     |LUT2     |   236|
+|4     |LUT3     |    84|
+|5     |LUT4     |   154|
+|6     |LUT5     |   397|
+|7     |LUT6     |  2937|
+|8     |MUXF7    |   907|
+|9     |MUXF8    |   432|
+|10    |RAM64M   |    30|
+|11    |RAM64X1D |    12|
+|12    |FDRE     |  4453|
+|13    |FDSE     |    10|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------------------+-------------------------+------+
+|      |Instance                          |Module                   |Cells |
++------+----------------------------------+-------------------------+------+
+|1     |top                               |                         |  9707|
+|2     |  inst                            |huff_coder4_v1_0         |  9707|
+|3     |    huff_coder4_v1_0_S00_AXI_inst |huff_coder4_v1_0_S00_AXI |  9707|
+|4     |      coder_inst                  |huff_coder               |  9495|
++------+----------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:29 ; elapsed = 00:01:37 . Memory (MB): peak = 933.121 ; gain = 637.941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:23 . Memory (MB): peak = 933.121 ; gain = 282.059
+Synthesis Optimization Complete : Time (s): cpu = 00:01:29 ; elapsed = 00:01:37 . Memory (MB): peak = 933.121 ; gain = 637.941
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1425 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'huffman_coder_acc_huff_coder4_0_0' is not ideal for floorplanning, since the cellview 'huff_coder' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 933.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 42 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 30 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+280 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:42 . Memory (MB): peak = 933.121 ; gain = 646.227
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 933.121 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.runs/huffman_coder_acc_huff_coder4_0_0_synth_1/huffman_coder_acc_huff_coder4_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP huffman_coder_acc_huff_coder4_0_0, cache-ID = 991812c84dfed0e1
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 933.121 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.runs/huffman_coder_acc_huff_coder4_0_0_synth_1/huffman_coder_acc_huff_coder4_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file huffman_coder_acc_huff_coder4_0_0_utilization_synth.rpt -pb huffman_coder_acc_huff_coder4_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  5 16:56:38 2021...

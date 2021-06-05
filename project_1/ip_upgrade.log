@@ -1,0 +1,37 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun  5 16:53:55 2021
+| Host         : DESKTOP-J4MTDV6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'huffman_coder_acc_huff_coder4_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of huffman_coder_acc_huff_coder4_0_0 (xilinx.com:user:huff_coder4:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jun  1 21:44:26 2021
+| Host         : DESKTOP-J4MTDV6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'huffman_coder_acc_huff_coder4_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of huffman_coder_acc_huff_coder4_0_0 (xilinx.com:user:huff_coder4:1.0) from (Rev. 2) to (Rev. 3)
+

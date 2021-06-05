@@ -1,0 +1,285 @@
+17:10:29 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../huffman_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:152:28: warning: passing argument 1 of 'readData' from incompatible pointer type [-Wincompatible-pointer-types]
+       u8 length = readData(&data);
+                            ^
+../src/helloworld.c:86:4: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[100] {aka unsigned char (*)[100]}'
+ u8 readData(u8 *data){
+    ^~~~~~~~
+../src/helloworld.c:170:4: warning: implicit declaration of function 'HUFFMAN_CODER4_mWriteReg'; did you mean 'HUFF_CODER4_mWriteReg'? [-Wimplicit-function-declaration]
+    HUFFMAN_CODER4_mWriteReg(CODER_BASE_ADDR, INPUT_SYMBOLS, 0);
+    ^~~~~~~~~~~~~~~~~~~~~~~~
+    HUFF_CODER4_mWriteReg
+../src/helloworld.c:60:25: error: 'XPAR_HUFFMAN_CODER4_0_S00_AXI_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_HUFF_CODER4_0_S00_AXI_BASEADDR'?
+ #define CODER_BASE_ADDR XPAR_HUFFMAN_CODER4_0_S00_AXI_BASEADDR
+                         ^
+../src/helloworld.c:60:25: note: in definition of macro 'CODER_BASE_ADDR'
+ #define CODER_BASE_ADDR XPAR_HUFFMAN_CODER4_0_S00_AXI_BASEADDR
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:60:25: note: each undeclared identifier is reported only once for each function it appears in
+ #define CODER_BASE_ADDR XPAR_HUFFMAN_CODER4_0_S00_AXI_BASEADDR
+                         ^
+../src/helloworld.c:60:25: note: in definition of macro 'CODER_BASE_ADDR'
+ #define CODER_BASE_ADDR XPAR_HUFFMAN_CODER4_0_S00_AXI_BASEADDR
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:63:23: error: 'HUFFMAN_CODER4_S00_AXI_SLV_REG1_OFFSET' undeclared (first use in this function); did you mean 'HUFF_CODER4_S00_AXI_SLV_REG1_OFFSET'?
+ #define INPUT_SYMBOLS HUFFMAN_CODER4_S00_AXI_SLV_REG1_OFFSET
+                       ^
+../src/helloworld.c:63:23: note: in definition of macro 'INPUT_SYMBOLS'
+ #define INPUT_SYMBOLS HUFFMAN_CODER4_S00_AXI_SLV_REG1_OFFSET
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:62:20: error: 'HUFFMAN_CODER4_S00_AXI_SLV_REG0_OFFSET' undeclared (first use in this function); did you mean 'HUFFMAN_CODER4_S00_AXI_SLV_REG1_OFFSET'?
+ #define INPUT_DATA HUFFMAN_CODER4_S00_AXI_SLV_REG0_OFFSET
+                    ^
+../src/helloworld.c:62:20: note: in definition of macro 'INPUT_DATA'
+ #define INPUT_DATA HUFFMAN_CODER4_S00_AXI_SLV_REG0_OFFSET
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:219:14: warning: implicit declaration of function 'HUFFMAN_CODER4_mReadReg'; did you mean 'HUFF_CODER4_mReadReg'? [-Wimplicit-function-declaration]
+     result = HUFFMAN_CODER4_mReadReg(CODER_BASE_ADDR, OUTPUT_STATE);
+              ^~~~~~~~~~~~~~~~~~~~~~~
+              HUFF_CODER4_mReadReg
+../src/helloworld.c:64:22: error: 'HUFFMAN_CODER4_S00_AXI_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'HUFFMAN_CODER4_S00_AXI_SLV_REG0_OFFSET'?
+ #define OUTPUT_STATE HUFFMAN_CODER4_S00_AXI_SLV_REG2_OFFSET
+                      ^
+../src/helloworld.c:64:22: note: in definition of macro 'OUTPUT_STATE'
+ #define OUTPUT_STATE HUFFMAN_CODER4_S00_AXI_SLV_REG2_OFFSET
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:65:21: error: 'HUFFMAN_CODER4_S00_AXI_SLV_REG3_OFFSET' undeclared (first use in this function); did you mean 'HUFFMAN_CODER4_S00_AXI_SLV_REG2_OFFSET'?
+ #define OUTPUT_DATA HUFFMAN_CODER4_S00_AXI_SLV_REG3_OFFSET
+                     ^
+../src/helloworld.c:65:21: note: in definition of macro 'OUTPUT_DATA'
+ #define OUTPUT_DATA HUFFMAN_CODER4_S00_AXI_SLV_REG3_OFFSET
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/helloworld.o] Error 1
+17:10:33 **** Auto Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../huffman_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:152:28: warning: passing argument 1 of 'readData' from incompatible pointer type [-Wincompatible-pointer-types]
+       u8 length = readData(&data);
+                            ^
+../src/helloworld.c:86:4: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[100] {aka unsigned char (*)[100]}'
+ u8 readData(u8 *data){
+    ^~~~~~~~
+../src/helloworld.c:233:51: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Wformat=]
+     printf("DATA DEC: %lu, DATA BIN: %s,  INDEX: %d\n", outData[i], byte_to_binary_u32(outData[i]), HUFF_CODER4_mReadReg(CODER_BASE_ADDR, OUTPUT_STATE) & 0xFFFF);
+                                                  ~^
+                                                  %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/huffman.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/huffman.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../huffman_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/huffman.d" -MT"src/huffman.o" -o "src/huffman.o" "../src/huffman.c"
+../src/huffman.c: In function 'byte_to_binary':
+../src/huffman.c:62:9: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+         strcat(b, (((int)x & z) == z) ? "1" : "0");
+         ^~~~~~
+../src/huffman.c:62:9: warning: incompatible implicit declaration of built-in function 'strcat'
+../src/huffman.c:62:9: note: include '<string.h>' or provide a declaration of 'strcat'
+../src/huffman.c: In function 'huffman_tree':
+../src/huffman.c:141:3: warning: implicit declaration of function 'qsort'; did you mean 'sqrt'? [-Wimplicit-function-declaration]
+   qsort(node_tab, length, sizeof(Node_t), comp);
+   ^~~~~
+   sqrt
+../src/huffman.c: In function 'print_huff':
+../src/huffman.c:164:2: warning: implicit declaration of function 'print'; did you mean 'lrint'? [-Wimplicit-function-declaration]
+  print("HUFFMAN CODES: \n");
+  ^~~~~
+  lrint
+../src/huffman.c:168:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+        tl = sprintf(databuffer, "Character: %c, Probability [0.XXX]: %d, Bits used: %d, Code: %s \n", characters[i], freq[i], symbolsLength_m[i], byte_to_binary(symbols[i], symbolsLength_m[i]));
+                     ^~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/huffman.h:11,
+                 from ../src/huffman.c:8:
+c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:225:5: note: expected 'char * restrict' but argument is of type 'u8 * {aka unsigned char *}'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/huffman.c:166:5: warning: variable 'tl' set but not used [-Wunused-but-set-variable]
+  u8 tl=0;
+     ^~
+../src/huffman.c: In function 'huffman_tree':
+../src/huffman.c:161:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/huffman.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../huffman_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: huffman_demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../huffman_demo_bsp/ps7_cortexa9_0/lib -o "huffman_demo.elf"  ./src/helloworld.o ./src/huffman.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: huffman_demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size huffman_demo.elf  |tee "huffman_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98200	   2636	  26464	 127300	  1f144	huffman_demo.elf
+'Finished building: huffman_demo.elf.size'
+' '
+17:10:39 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:12:11 **** Auto Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../huffman_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:152:28: warning: passing argument 1 of 'readData' from incompatible pointer type [-Wincompatible-pointer-types]
+       u8 length = readData(&data);
+                            ^
+../src/helloworld.c:86:4: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[100] {aka unsigned char (*)[100]}'
+ u8 readData(u8 *data){
+    ^~~~~~~~
+../src/helloworld.c:233:51: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Wformat=]
+     printf("DATA DEC: %lu, DATA BIN: %s,  INDEX: %d\n", outData[i], byte_to_binary_u32(outData[i]), HUFF_CODER4_mReadReg(CODER_BASE_ADDR, OUTPUT_STATE) & 0xFFFF);
+                                                  ~^
+                                                  %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: huffman_demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../huffman_demo_bsp/ps7_cortexa9_0/lib -o "huffman_demo.elf"  ./src/helloworld.o ./src/huffman.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: huffman_demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size huffman_demo.elf  |tee "huffman_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98136	   2636	  26464	 127236	  1f104	huffman_demo.elf
+'Finished building: huffman_demo.elf.size'
+' '
+17:12:12 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:13:29 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../huffman_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:152:28: warning: passing argument 1 of 'readData' from incompatible pointer type [-Wincompatible-pointer-types]
+       u8 length = readData(&data);
+                            ^
+../src/helloworld.c:86:4: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[100] {aka unsigned char (*)[100]}'
+ u8 readData(u8 *data){
+    ^~~~~~~~
+../src/helloworld.c:233:56: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Wformat=]
+     printf("DATA DEC: %lu, DATA BIN: %s,  Data index: %d\n", outData[i], byte_to_binary_u32(outData[i]), HUFF_CODER4_mReadReg(CODER_BASE_ADDR, OUTPUT_STATE) & 0xFFFF);
+                                                       ~^
+                                                       %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: huffman_demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../huffman_demo_bsp/ps7_cortexa9_0/lib -o "huffman_demo.elf"  ./src/helloworld.o ./src/huffman.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: huffman_demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size huffman_demo.elf  |tee "huffman_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98136	   2636	  26464	 127236	  1f104	huffman_demo.elf
+'Finished building: huffman_demo.elf.size'
+' '
+17:37:14 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:41:01 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:54:38 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:07:06 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:15:41 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:16:38 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:19:41 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:57:42 **** Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:59:22 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:00:24 **** Auto Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../huffman_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:152:28: warning: passing argument 1 of 'readData' from incompatible pointer type [-Wincompatible-pointer-types]
+       u8 length = readData(&data);
+                            ^
+../src/helloworld.c:86:4: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[100] {aka unsigned char (*)[100]}'
+ u8 readData(u8 *data){
+    ^~~~~~~~
+../src/helloworld.c:233:56: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Wformat=]
+     printf("DATA DEC: %lu, DATA BIN: %s,  Data index: %d\n", outData[i], byte_to_binary_u32(outData[i]), HUFF_CODER4_mReadReg(CODER_BASE_ADDR, OUTPUT_STATE) & 0xFFFF);
+                                                       ~^
+                                                       %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: huffman_demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../huffman_demo_bsp/ps7_cortexa9_0/lib -o "huffman_demo.elf"  ./src/helloworld.o ./src/huffman.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: huffman_demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size huffman_demo.elf  |tee "huffman_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98136	   2636	  26464	 127236	  1f104	huffman_demo.elf
+'Finished building: huffman_demo.elf.size'
+' '
+19:00:28 **** Incremental Build of configuration Debug for project huffman_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

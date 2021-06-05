@@ -1,0 +1,614 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "100000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "huffman_coder_acc_i/ila_0",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "10A6FF5C664B5ACC9C337064FF89790F",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WREADY",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_AWADDR",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_AWADDR[3]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_AWADDR[2]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_AWADDR[1]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_AWADDR[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_BRESP",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_BRESP[1]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_BRESP[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_BVALID",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_BREADY",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_ARADDR",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_ARADDR[3]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_ARADDR[2]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_ARADDR[1]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_ARADDR[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RREADY",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WVALID",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_ARVALID",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_ARREADY",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[31]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[30]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[29]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[28]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[27]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[26]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[25]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[24]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[23]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[22]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[21]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[20]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[19]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[18]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[17]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[16]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[15]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[14]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[13]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[12]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[11]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[10]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[9]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[8]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[7]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[6]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[5]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[4]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[3]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[2]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[1]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RDATA[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_AWVALID",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_AWREADY",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe13",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RRESP",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RRESP[1]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RRESP[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe14",
+                                "id": 14,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 14,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[31]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[30]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[29]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[28]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[27]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[26]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[25]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[24]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[23]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[22]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[21]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[20]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[19]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[18]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[17]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[16]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[15]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[14]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[13]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[12]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[11]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[10]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[9]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[8]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[7]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[6]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[5]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[4]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[3]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[2]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[1]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WDATA[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe15",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 15,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WSTRB",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WSTRB[3]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WSTRB[2]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WSTRB[1]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_WSTRB[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe16",
+                                "id": 16,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 16,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_RVALID",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe17",
+                                "id": 17,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 17,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_ARPROT",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_ARPROT[2]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_ARPROT[1]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_ARPROT[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe18",
+                                "id": 18,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 18,
+                                "nets": [
+                                    {
+                                        "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_AWPROT",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_AWPROT[2]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_AWPROT[1]"
+                                            },
+                                            {
+                                                "name": "huffman_coder_acc_i/ps7_0_axi_periph_M00_AXI_AWPROT[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

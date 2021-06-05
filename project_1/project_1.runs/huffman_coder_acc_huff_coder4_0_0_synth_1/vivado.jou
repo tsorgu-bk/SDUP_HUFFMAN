@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jun  5 16:54:37 2021
+# Process ID: 1916
+# Current directory: F:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.runs/huffman_coder_acc_huff_coder4_0_0_synth_1
+# Command line: vivado.exe -log huffman_coder_acc_huff_coder4_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source huffman_coder_acc_huff_coder4_0_0.tcl
+# Log file: F:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.runs/huffman_coder_acc_huff_coder4_0_0_synth_1/huffman_coder_acc_huff_coder4_0_0.vds
+# Journal file: F:/MAGISTERKA_S1/SDUP/PROJEKT_HUFFMAN_V2/project_1/project_1.runs/huffman_coder_acc_huff_coder4_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source huffman_coder_acc_huff_coder4_0_0.tcl -notrace

@@ -146,9 +146,10 @@ int main()
 
     u8 data[100] = {0};
     print("HELLO, WELCOME TO HALFMAN-HALFCODER!!!\n\r");
-
+	huffman_tree(characters, frequency,symbols, symbolLength,SYMBOLS_COUNT);
 
     while(1){
+		memset(message, 0, sizeof(message)); // clear old data
     	 u8 length = readData(&data);
     	 if(length){
 
@@ -158,13 +159,12 @@ int main()
     			 }
     		 }
 
-    		 memset(message, 0, sizeof(message)); // clear old data
- 		 	 memcpy(message, (u8*)data, length); // copy new data
- 		 	 printf("RECIEVED LENGHT: %d , RECIEVED DATA: %s", length, data);
+			
+			memcpy(message, (u8*)data, length); // copy new data
+			printf("RECIEVED LENGHT: %d , RECIEVED DATA: %s", length, data);
 
- 		 	 MESSAGE_LEN = length;
- 		 	 huffman_tree(characters, frequency,symbols, symbolLength,SYMBOLS_COUNT);
- 		 	 print_huff(characters, frequency, symbols, symbolLength, SYMBOLS_COUNT);
+			MESSAGE_LEN = length;
+			print_huff(characters, frequency, symbols, symbolLength, SYMBOLS_COUNT);
 
 		    // reset input registers
 			HUFF_CODER4_mWriteReg(CODER_BASE_ADDR, INPUT_SYMBOLS, 0);

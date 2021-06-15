@@ -65,8 +65,8 @@ reg previousClockEnable;
 parameter BUFFER_SIZE = 100;
 // buffers for input data
 reg [7:0] allMessage[0:BUFFER_SIZE-1];
-reg [7:0] symbols[0:BUFFER_SIZE-1];
-reg [31:0] symbolsLength[0:BUFFER_SIZE-1];
+reg [31:0] symbols[0:BUFFER_SIZE-1];
+reg [7:0] symbolsLength[0:BUFFER_SIZE-1];
 reg [7:0] characters[0:BUFFER_SIZE-1];
 
 // buffer for putput data

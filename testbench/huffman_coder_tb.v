@@ -37,7 +37,7 @@ module huffman_coder_tb();
     reg [31:0] dataOut;
     reg [15:0] log;
     
-    parameter MESSAGE_LEN = 37;
+    parameter MESSAGE_LEN = 12;
     reg [7:0] allMessage[0:MESSAGE_LEN]           = {MESSAGE_LEN, 65, 76, 65, 32, 77, 65, 32, 75, 79, 84, 65, 0};   
     reg [31:0] symbols[0:SYMBOLS_COUNT]        = {SYMBOLS_COUNT, 0, 14, 48, 9, 31, 4, 4, 51, 6, 11, 44, 23, 30, 7, 10, 13, 49, 90, 5, 7, 0, 8, 10, 6, 183, 50, 182, 0};
     reg [7:0] symbolsLength[0:SYMBOLS_COUNT]    = {SYMBOLS_COUNT, 0, 4, 6, 5, 5, 3, 5, 6, 4, 4, 8, 7, 5, 5, 4, 4, 6, 9, 4, 4, 3, 5, 6, 5, 10, 6, 10, 0};
